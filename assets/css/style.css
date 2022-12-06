@@ -1,31 +1,50 @@
 body{
+    height: 100vh;
+}
+#container{
+    height: 100%;
+}
+.list_title{
+    font-family: Helvetica, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    /* margin-left: 2vw; */
+    margin-bottom: 1em;
 }
 .track_list {
-    
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     padding: 0px;
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    max-height: 98vh;
+    max-height: 80vh;
     flex-direction: column;
     margin: 1vh .3vw;
     font-size: 1.8vw;
 }
-@media screen and (max-width: 160vh){
-    .track_list{
-        flex-wrap:nowrap;
-        font-size: 4vh;
-    }
-}
 .track_item{
     display: flex;
     /* width: 30%; */
-    height: 1.2em;
+    height: 1.5em;
     flex-direction: row;
     align-items: center;
 }
+
+@media screen and (max-width: 160vh){
+    .list_title{
+        margin-top: 2em;
+        font-size: 6vw;
+    }
+    .track_list{
+        flex-wrap:nowrap;
+        font-size: 3.6vw;
+    }
+    .track_item{
+        height: 1.8em;
+    }
+}
+
 
 .track_item a{
     color: inherit;
