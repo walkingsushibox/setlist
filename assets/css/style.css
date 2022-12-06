@@ -1,7 +1,7 @@
 body{
 }
 .track_list {
-    font-size: 1.8vw;
+    
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     padding: 0px;
@@ -11,8 +11,14 @@ body{
     max-height: 98vh;
     flex-direction: column;
     margin: 1vh .3vw;
+    font-size: 1.8vw;
 }
-
+@media screen and (max-width: 160vh){
+    .track_list{
+        flex-wrap:nowrap;
+        font-size: 4vh;
+    }
+}
 .track_item{
     display: flex;
     /* width: 30%; */
