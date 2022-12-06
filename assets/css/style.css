@@ -1,0 +1,75 @@
+body{
+}
+.track_list {
+    font-size: 1.8vw;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 98vh;
+    flex-direction: column;
+    margin: 1vh .3vw;
+}
+
+.track_item{
+    display: flex;
+    /* width: 30%; */
+    height: 1.2em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.track_item a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.id_container{
+    display: inline-block;
+    min-width: 2em;
+    text-align: right;
+    margin-right: .2em ;
+    /* align-self: stretch; */
+    /* flex-shrink: 1; */
+}
+
+.title_container{
+    display: inline-block;
+    font-size: 100%;
+    font-family: '凸版文久見出しゴシック';
+    kerning: auto;
+    padding: 0;
+    margin: 0;
+    /* width: 23em; */
+    /* background-color: black; */
+}
+
+.title_container a {
+    position: relative;
+    overflow:  hidden;
+    content: "";
+    border-bottom: solid 1px rgba(0,0,0,0);
+}
+
+.title_container a:hover{
+    border-bottom: solid 1px rgba(0,0,0,1);
+    transition: all .5s ease-out;
+}
+
+.sub_container{
+    display: inline-block;
+    font-size: 50%;
+    height: 1em;
+    margin-left: .3em ;
+    /* padding-bottom: .1em; */
+    /* margin-top: .5em; */
+    color: black;
+    font-kerning: auto;
+}
+
+/* 
+.sc_links{
+    
+} */
