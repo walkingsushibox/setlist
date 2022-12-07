@@ -63,7 +63,7 @@ body{
 .title_container{
     display: inline-block;
     font-size: 100%;
-    font-family: '凸版文久見出しゴシック';
+    font-family: '凸版文久見出しゴシック', Helvetica, sans-serif;
     kerning: auto;
     padding: 0;
     margin: 0;
