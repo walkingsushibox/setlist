@@ -1,10 +1,12 @@
 // import data from './assets/json/2022_12_11.json' assert{type: "json"}
-fetch('../assets/json/2022_12_11.json')
-.then(function (response){
-    return response.json();
-}).then( function (myjson) {
-    makeList(myjson);
-});
+
+
+// fetch('../assets/json/2022_12_11.json')
+// .then(function (response){
+//     return response.json();
+// }).then( function (myjson) {
+//     makeList(myjson);
+// });
 
 function makeList(data){
 
