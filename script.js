@@ -1,5 +1,14 @@
-// import data from './assets/json/2022_12_11.json' assert{type: "json"}
-
+// render(20221211);
+function render(date){
+    var uri = '../assets/json/'+ date + '.json'
+    console.log(uri)
+    fetch(uri)
+    .then(function (response){
+        return response.json();
+    }).then( function (myjson) {
+        makeList(myjson);
+    });
+}
 
 // fetch('../assets/json/2022_12_11.json')
 // .then(function (response){
