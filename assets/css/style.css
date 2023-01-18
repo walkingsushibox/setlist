@@ -15,13 +15,12 @@ body{
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     padding: 0px;
-    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     max-height: 80vh;
     flex-direction: column;
     margin: 1vh .3vw;
-    font-size: 1.8vw;
+    font-size: 1.7vw;
     line-height: 1;
 }
 .track_item{
@@ -30,7 +29,6 @@ body{
     height: 1.5em;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
 }
 
 @media screen and (max-width: 160vh){
@@ -44,6 +42,11 @@ body{
     }
     .track_item{
         height: 1.8em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .title_container{
+        max-width: none;
     }
 }
 
@@ -69,7 +72,7 @@ body{
     kerning: auto;
     padding: 0;
     margin: 0;
-    /* width: 23em; */
+    max-width: 25em;
     /* background-color: black; */
 }
 
