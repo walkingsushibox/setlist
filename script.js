@@ -1,12 +1,12 @@
 // render(20221211);
-function render(date){
-    var uri = '../assets/json/'+ date + '.json'
-    console.log(uri)
+function render(date, isDisplayID){
+    var uri = '../assets/json/'+ date + '.json';
+    console.log(uri);
     fetch(uri)
     .then(function (response){
         return response.json();
     }).then( function (myjson) {
-        makeList(myjson);
+        makeList(myjson, isDisplayID);
     });
 }
 
@@ -17,7 +17,7 @@ function render(date){
 //     makeList(myjson);
 // });
 
-function makeList(data){
+function makeList(data, isDisplayID){
 
     let track_list = document.createElement("div");
     track_list.className = "track_list";
@@ -25,12 +25,14 @@ function makeList(data){
     for (let i = 0; i < data.length; i++){
         let track_item = document.createElement("div");
         track_item.className = "track_item";
-
         let item_id = i+1;
         let id_container = document.createElement("div")
-        id_container.innerText = `${item_id}:`;
+        if (isDisplayID == true) {
+            id_container.innerText = `${item_id}:`;
+        }
         id_container.className = "id_container";
         track_item.appendChild(id_container);
+    
 
         let item_title = data[i].title;
         let title_container = document.createElement("div");
