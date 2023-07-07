@@ -39,7 +39,7 @@ body{
     /* flex-wrap: wrap; */
     max-height: 80vh;
     /* flex-direction: column; */
-    margin: 1vh .3vw;
+    margin: 1vh .3VW;
     font-size: 1.3vw;
     line-height: 1;
 }
@@ -68,6 +68,7 @@ body{
     .track_list{
         flex-wrap:nowrap;
         font-size: 3.6vw;
+        margin: 1vh 3em;
     }
     .track_item{
         height: 1.8em;
@@ -87,7 +88,8 @@ body{
 }
 
 .id_container{
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     min-width: 2em;
     text-align: right;
     margin-right: .2em ;
@@ -112,12 +114,14 @@ body{
     font-kerning: auto;
 }
 
-/* 
-.sc_links{
-    
-} */
+.title_container a{
+    display: block;
+    text-indent: -8px;
+    padding-left: 8px;
+}
 
 .track_item a:before, .track_item a:after {
+/* .title_container:before, .title_container:after{ */
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -127,6 +131,7 @@ body{
 }
 
 .track_item a:before {
+/* .title_container:before{ */
 	margin-right: 5px;
 	content: '[';
 	-webkit-transform: translateX(10px);
@@ -135,7 +140,8 @@ body{
 }
 
 .track_item a:after {
-	margin-left: 5px;
+/* .title_container:after{ */
+	margin-left: 13px;
 	content: ']';
 	-webkit-transform: translateX(-10px);
 	-moz-transform: translateX(-10px);
@@ -143,6 +149,7 @@ body{
 }
 
 .track_item a:hover:before, .track_item a:hover:after, .track_item a:focus:before, .track_item a:focus:after {
+/* .title_container:hover:before, .title_container:hover:after, .title_container:focus:before, .title_container:focus:after{ */
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
