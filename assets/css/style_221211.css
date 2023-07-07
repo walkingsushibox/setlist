@@ -19,6 +19,15 @@ body{
     overflow: scroll;
     padding: 0;
 }
+#home_menu{
+    text-decoration: none;
+    color: inherit;
+    opacity: 0;
+    font-size: inherit;
+}
+.list_title:hover #home_menu{
+    opacity: 1;
+}
 @media screen and (max-width: 160vh){
     #bg_screen{
         width: 160vh;
@@ -50,7 +59,7 @@ body{
     flex-wrap: wrap;
     max-height: 80vh;
     flex-direction: column;
-    margin: 1vh .3vw;
+    margin: 1vh 8vw;
     font-size: 1.7vw;
     line-height: 1;
 }
@@ -70,6 +79,7 @@ body{
     .track_list{
         flex-wrap:nowrap;
         font-size: 3.6vw;
+        margin: 1vh .3vw;
     }
     .track_item{
         height: 1.8em;

@@ -1,0 +1,129 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+#bg_screen{
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#container{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    overflow: scroll;
+    padding: 0;
+}
+@media screen and (max-width: 160vh){
+    #bg_screen{
+        width: 160vh;
+        overflow: hidden;
+    }
+    #container{
+        display: block;
+        padding-bottom: 2rem;
+    }
+}
+
+.list_title{
+    font-family: Helvetica, sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    /* margin-left: 2vw; */
+    margin-bottom: 1em;
+}
+
+.list_title a{
+    text-decoration: none;
+    color: inherit;
+}
+.track_list {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 80vh;
+    flex-direction: column;
+    margin: 1vh 8vw;
+    font-size: 1.7vw;
+    line-height: 1;
+}
+.track_item{
+    display: flex;
+    /* width: 30%; */
+    height: 1.5em;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 160vh){
+    .list_title{
+        margin-top: 2em;
+        font-size: 6vw;
+    }
+    .track_list{
+        flex-wrap:nowrap;
+        font-size: 3.6vw;
+        margin: 1vh .3vw;
+    }
+    .track_item{
+        height: 1.8em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .title_container{
+        max-width: none;
+    }
+}
+
+
+.track_item a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.id_container{
+    display: inline-block;
+    min-width: 2em;
+    text-align: right;
+    margin-right: .2em ;
+    /* align-self: stretch; */
+    /* flex-shrink: 1; */
+}
+
+.title_container{
+    display: inline-block;
+    font-size: 100%;
+    font-family: '凸版文久見出しゴシック', Helvetica, sans-serif;
+    kerning: auto;
+    padding: 0;
+    margin: 0;
+    max-width: 25em;
+    /* background-color: black; */
+}
+
+.title_container a, .list_title a{
+    position: relative;
+    overflow:  hidden;
+    content: "";
+    border-bottom: solid 1px rgba(0,0,0,0);
+}
+
+.title_container a:hover, .list_title a:hover{
+    border-bottom: solid 1px rgba(0,0,0,1);
+    transition: all .5s ease-out;
+}
+
+.sub_container{
+    display: inline-block;
+    font-size: 50%;
+    height: 1em;
+    margin-left: .3em ;
+    font-kerning: auto;
+}
