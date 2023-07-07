@@ -22,31 +22,28 @@ body{
     bottom: 0;
     width: 100%;
     color: white;
+    overflow: scroll;
+    padding: 0;
 }
 .list_title{
     font-family: Helvetica, sans-serif;
     font-size: 2.3vw;
     text-align: center;
     width: 40%;
-    /* margin-left: 2vw; */
-    margin-bottom: 1em;
 }
 .track_list {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     padding: 0px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    max-height: 80vh;
-    /* flex-direction: column; */
     margin: 1vh .3VW;
     font-size: 1.3vw;
     line-height: 1;
+    overflow-y: scroll;
+    max-height: 90vh;
 }
 .track_item{
     display: flex;
-    /* width: 30%; */
-    height: 1.5em;
+    min-height: 1.5em;
     flex-direction: row;
     align-items: center;
     margin-left: 3em;
@@ -59,6 +56,7 @@ body{
     }
     #container{
         display: block;
+        padding-bottom: 2rem;
     }
     .list_title{
         margin-top: 2em;
@@ -69,11 +67,11 @@ body{
         flex-wrap:nowrap;
         font-size: 3.6vw;
         margin: 1vh 3em;
+        margin-bottom: 1vh;
+        overflow-y:visible;
+        max-height: none;
     }
     .track_item{
-        height: 1.8em;
-        margin-top: 10px;
-        margin-bottom: 10px;
         margin-left: 0;
     }
     .title_container{
