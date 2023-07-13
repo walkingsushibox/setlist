@@ -26,3 +26,7 @@ body{
 .list_title:hover #home_menu{
     opacity: 1;
 }
+.list_title{
+    transform: translateX(-1em);
+    margin: 0;
+}

@@ -23,6 +23,7 @@
     text-decoration: none;
     color: inherit;
 }
+
 .track_list {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -53,13 +54,14 @@
     }
     .list_title{
         margin-top: 2em;
+        margin-bottom: 1em;
         font-size: 6vw;
         width: auto;
     }
     .track_list{
         flex-wrap:nowrap;
         font-size: 3.6vw;
-        margin: 1vh 3em;
+        margin: 1vh 1em;
         margin-bottom: 1vh;
         overflow-y:visible;
         max-height: none;

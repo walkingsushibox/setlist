@@ -18,6 +18,12 @@
     text-align: center;
     width: 40%;
 }
+
+.list_title a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .track_list {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -28,6 +34,7 @@
     overflow-y: scroll;
     max-height: 90vh;
 }
+
 .track_item{
     display: flex;
     min-height: 1.5em;
@@ -47,13 +54,14 @@
     }
     .list_title{
         margin-top: 2em;
+        margin-bottom: 1em;
         font-size: 6vw;
         width: auto;
     }
     .track_list{
         flex-wrap:nowrap;
         font-size: 3.6vw;
-        margin: 1vh 3em;
+        margin: 1vh 1em;
         margin-bottom: 1vh;
         overflow-y:visible;
         max-height: none;
