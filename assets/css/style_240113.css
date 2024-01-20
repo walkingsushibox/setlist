@@ -63,6 +63,7 @@
         margin-bottom: 1vh;
         overflow-y:visible;
         max-height: none;
+	width: 100%;
     }
     .track_item{
         margin-left: 0;
