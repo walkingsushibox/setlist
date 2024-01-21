@@ -4,7 +4,7 @@
 }
 
 #container{
-    overflow: scroll;
+    overflow: auto;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -31,7 +31,7 @@
     margin: 1vh .3VW;
     font-size: 1.3vw;
     line-height: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 90vh;
 }
 
